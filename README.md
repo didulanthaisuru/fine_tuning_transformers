@@ -29,15 +29,7 @@
 
 ---
 
-## 🖼️ Visualizations
 
-### Training History
-![Training History](training_history.png)
-
-### Evaluation Results
-![Evaluation Results](evaluation_results.png)
-
----
 
 ## 🚀 Quick Start
 
@@ -207,10 +199,7 @@ Stratified splitting ensures balanced class distribution across all sets.
 sms-spam-detector/
 ├── transformers-notebook.ipynb          # Complete training pipeline
 ├── inference_example_with_huggingface.ipynb  # Inference examples
-├── training_history.png                 # Training/validation curves
-├── evaluation_results.png               # Confusion matrix & ROC curve
 ├── README.md                            # This file
-└── requirements.txt                     # Python dependencies
 ```
 
 ---
@@ -548,7 +537,7 @@ If you use this model in your research or project, please cite:
 
 ```bibtex
 @misc{sms-spam-detector-2025,
-  author = {Didulantha Isuru},
+  author = {Isuru Didulantha},
   title = {SMS Spam Detector: Fine-tuned DistilBERT for Spam Classification},
   year = {2025},
   publisher = {HuggingFace},
