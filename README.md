@@ -1,13 +1,13 @@
 # SMS Spam Detector 🚨📱
 
-[![Model](https://img.shields.io/badge/🤗-Model-yellow)](https://huggingface.co/didulanthaisuru/sms-spam-detector)
+[![Model](https://img.shields.io/badge/🤗-Model-yellow)](https://huggingface.co/didulantha/sms-spam-detector)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
 
 > Fine-tuned DistilBERT model for SMS spam detection achieving **99.16% accuracy** with **<6ms inference time** on GPU.
 
-[🤗 Try the Model](https://huggingface.co/didulanthaisuru/sms-spam-detector) | [📓 Training Notebook](transformers-notebook.ipynb) | [🧪 Inference Demo](inference_example_with_huggingface.ipynb)
+[🤗 Try the Model](https://huggingface.co/didulantha/sms-spam-detector) | [📓 Training Notebook](transformers-notebook.ipynb) | [🧪 Inference Demo](inference_example_with_huggingface.ipynb)
 
 ---
 
@@ -47,7 +47,7 @@ from transformers import pipeline
 # Load the model
 classifier = pipeline(
     "text-classification", 
-    model="didulanthaisuru/sms-spam-detector"
+    model="didulantha/sms-spam-detector"
 )
 
 # Predict
@@ -63,7 +63,7 @@ from transformers import DistilBertTokenizer, DistilBertForSequenceClassificatio
 import torch
 
 # Load model and tokenizer
-model_name = "didulanthaisuru/sms-spam-detector"
+model_name = "didulantha/sms-spam-detector"
 tokenizer = DistilBertTokenizer.from_pretrained(model_name)
 model = DistilBertForSequenceClassification.from_pretrained(model_name)
 
@@ -308,7 +308,7 @@ from flask import Flask, request, jsonify
 from transformers import pipeline
 
 app = Flask(__name__)
-classifier = pipeline("text-classification", model="didulanthaisuru/sms-spam-detector")
+classifier = pipeline("text-classification", model="didulantha/sms-spam-detector")
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -438,7 +438,7 @@ tqdm>=4.65.0
 from transformers import pipeline
 
 # Test model loading
-classifier = pipeline("text-classification", model="didulanthaisuru/sms-spam-detector")
+classifier = pipeline("text-classification", model="didulantha/sms-spam-detector")
 
 # Test prediction
 result = classifier("Test message")
@@ -511,9 +511,9 @@ The trained model is also released under Apache 2.0, allowing:
 
 ## 📞 Contact
 
-**Author:** Didulantha Isuru  
-**HuggingFace:** [@didulanthaisuru](https://huggingface.co/didulanthaisuru)  
-**Model:** [didulanthaisuru/sms-spam-detector](https://huggingface.co/didulanthaisuru/sms-spam-detector)
+**Author:** Isuru  Didulantha
+**HuggingFace:** [@didulantha](https://huggingface.co/didulantha)  
+**Model:** [didulantha/sms-spam-detector](https://huggingface.co/didulantha/sms-spam-detector)
 
 For questions, issues, or collaborations:
 - 💬 Open an issue on this repository
@@ -541,7 +541,7 @@ If you use this model in your research or project, please cite:
   title = {SMS Spam Detector: Fine-tuned DistilBERT for Spam Classification},
   year = {2025},
   publisher = {HuggingFace},
-  howpublished = {\url{https://huggingface.co/didulanthaisuru/sms-spam-detector}},
+  howpublished = {\url{https://huggingface.co/didulantha/sms-spam-detector}},
   note = {Accuracy: 99.16\%, F1-Score: 96.86\%}
 }
 ```
@@ -552,7 +552,7 @@ If you use this model in your research or project, please cite:
 
 **Built with ❤️ using PyTorch and HuggingFace Transformers**
 
-[![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace-yellow)](https://huggingface.co/didulanthaisuru/sms-spam-detector)
+[![HuggingFace](https://img.shields.io/badge/🤗-HuggingFace-yellow)](https://huggingface.co/didulantha/sms-spam-detector)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red)](https://pytorch.org/)
 [![Transformers](https://img.shields.io/badge/Transformers-4.30+-blue)](https://huggingface.co/docs/transformers)
 
